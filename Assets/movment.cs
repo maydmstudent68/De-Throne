@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.SceneManagement;
 public class movment : MonoBehaviour 
 { 
 
@@ -70,5 +70,11 @@ public class movment : MonoBehaviour
         return hitACollider;
     }
 
+    public void Die()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+    }
 }
+
+
 
