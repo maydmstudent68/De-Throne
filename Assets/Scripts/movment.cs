@@ -32,16 +32,19 @@ public class movment : MonoBehaviour
         if (pressedRight) {
 
             //myAudioSource.Play();
+            transform.eulerAngles = new Vector3(0f, 0f, 0f);
             newVelocity.x = moveSpeed;
-            mySpriteRenderer.flipX = false;
+         //   mySpriteRenderer.flipX = false;
+
         }
         
         //myAudioSource.Stop();
 
         if (pressedLeft)
         {
+            transform.eulerAngles = new Vector3(0f, 180f, 0f);
             newVelocity.x = -moveSpeed;
-            mySpriteRenderer.flipX = true;
+          //  mySpriteRenderer.flipX = true;
         }
 
         myRigidbody2d.velocity = newVelocity;
