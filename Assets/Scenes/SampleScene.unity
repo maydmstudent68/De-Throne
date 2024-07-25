@@ -12050,6 +12050,7 @@ GameObject:
   - component: {fileID: 755595907}
   - component: {fileID: 755595908}
   - component: {fileID: 755595909}
+  - component: {fileID: 755595910}
   m_Layer: 0
   m_Name: player
   m_TagString: Player
@@ -12229,7 +12230,7 @@ Animator:
   m_GameObject: {fileID: 755595900}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: a01646c34ab8e014c9cda56b60c5983f, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -12357,6 +12358,19 @@ TrailRenderer:
   m_Autodestruct: 0
   m_Emitting: 1
   m_ApplyActiveColorSpace: 1
+--- !u!114 &755595910
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 755595900}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 72827de1961b4e2419d06ec08ddb0ae2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerAnimator: {fileID: 755595907}
 --- !u!1 &790311505
 GameObject:
   m_ObjectHideFlags: 0
