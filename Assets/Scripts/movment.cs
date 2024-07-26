@@ -30,20 +30,20 @@ public class movment : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (isDashing)
-        {
-            return;
-        }
+       // if (isDashing)
+      //  {
+       //     return;
+       // }
 
 
         Vector2 currentVelocity = myRigidbody2d.velocity;
         Vector2 newVelocity = currentVelocity;
 
-        if (Input.GetKeyDown(KeyCode.LeftShift) && canDash)
-        {
-            Debug.Log("Player Dashing");
-            StartCoroutine(Dash());
-        }
+        //if (Input.GetKeyDown(KeyCode.LeftShift) && canDash)
+        //{
+         //   Debug.Log("Player Dashing");
+          //  StartCoroutine(Dash());
+        //}
 
         bool pressedRight = Input.GetKey(KeyCode.RightArrow);
         bool pressedLeft = Input.GetKey(KeyCode.LeftArrow);
